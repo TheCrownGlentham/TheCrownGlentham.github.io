@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upcoming Events | The Crown Glentham</title>
 
+<style>
+:root{
+  --sage:#8FAF8A;
+  --beam:#5B4636;
+  --gold:#C8A84A;
+}
+
+body{
+  margin:0;
+  font-family: Georgia, serif;
+  background:#ffffff;
+  color:var(--beam);
+  text-align:center;
+}
+
+header{
+  background:var(--beam);
+  color:white;
+  padding:40px 20px;
+}
+
+h1{
+  margin:0;
+  font-size:36px;
+}
+
+section{
+  padding:60px 20px;
+  max-width:800px;
+  margin:auto;
+}
+
+.event-card{
+  border:2px solid var(--sage);
+  padding:30px;
+  border-radius:10px;
+}
+
+.event-card img{
+  width:100%;
+  max-width:400px;
+  border-radius:8px;
+  margin-bottom:20px;
+}
+
+.event-date{
+  font-size:20px;
+  color:var(--sage);
+  margin-top:10px;
+}
+
+.button{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 25px;
+  background:var(--gold);
+  color:black;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Upcoming Events</h1>
+</header>
+
+<section>
+
+  <div class="event-card">
+    <!-- Replace singer.jpg with your uploaded singer photo filename -->
+    <img src="singer.jpg" alt="Live Singer">
+
+    <h2>Live Singer Night</h2>
+    <div class="event-date">
+      Saturday 12th July • From 8pm
+    </div>
+
+    <p>
+      Join us for an evening of live music and great atmosphere.
+    </p>
+  </div>
+
+  <a href="index.html" class="button">Back to Home</a>
+
+</section>
+
+</body>
+</html>
