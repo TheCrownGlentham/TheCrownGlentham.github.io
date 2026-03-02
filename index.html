@@ -1,24 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Crown Glentham</title>
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#111; color:#fff; text-align:center; }
-    header { padding:80px 20px; }
-    h1 { font-size:42px; margin:0 0 10px; }
-    p { font-size:18px; color:#ccc; margin:0; }
-    a.button { display:inline-block; margin-top:24px; padding:14px 28px; background:gold; color:#000; text-decoration:none; font-weight:bold; border-radius:8px; }
-    footer { padding:22px 20px; background:#000; color:#777; font-size:14px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Crown Glentham</title>
+
+<style>
+:root{
+  --sage:#9CAF88;
+  --sage-dark:#6F7F63;
+  --cream:#F4EFE6;
+  --beam:#5B4636;
+  --gold:#C8A84A;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family: Georgia, serif;
+  background:var(--cream);
+  color:var(--beam);
+}
+
+header{
+  background:var(--sage);
+  padding:70px 20px;
+  text-align:center;
+  border-bottom:10px solid var(--beam);
+}
+
+header img{
+  width:140px;
+  margin-bottom:20px;
+}
+
+h1{
+  margin:0;
+  font-size:44px;
+  letter-spacing:1px;
+}
+
+.tagline{
+  font-size:18px;
+  margin-top:10px;
+  color:#2e2e2e;
+}
+
+.button{
+  display:inline-block;
+  padding:14px 28px;
+  background:var(--gold);
+  color:#000;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+  margin-top:25px;
+}
+
+.button:hover{
+  opacity:0.9;
+}
+
+nav{
+  background:var(--beam);
+  padding:14px;
+  text-align:center;
+}
+
+nav a{
+  color:var(--cream);
+  text-decoration:none;
+  margin:0 18px;
+  font-weight:bold;
+  letter-spacing:0.5px;
+}
+
+section{
+  padding:60px 20px;
+  max-width:900px;
+  margin:auto;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:25px;
+  font-size:30px;
+}
+
+p{
+  line-height:1.7;
+  font-size:18px;
+  text-align:center;
+}
+
+.times{
+  text-align:center;
+  font-size:18px;
+  line-height:1.8;
+}
+
+.footer{
+  background:var(--beam);
+  color:var(--cream);
+  text-align:center;
+  padding:30px;
+  margin-top:60px;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>The Crown Glentham</h1>
-    <p>Welcome to our official website</p>
-    <a class="button" href="#">Book Now</a>
-  </header>
-  <footer>© 2026 The Crown Glentham</footer>
+
+<header>
+  <img src="IMG_4644.jpeg" alt="The Crown Glentham Logo">
+  <h1>The Crown Glentham</h1>
+  <div class="tagline">A Traditional Country Pub</div>
+  <a href="#contact" class="button">Book a Table</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#menu">Food & Drink</a>
+  <a href="#times">Opening Times</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Welcome to The Crown Glentham — a warm and welcoming country pub
+    with sage green walls, rustic beams, traditional food,
+    quality ales and good company.
+  </p>
+</section>
+
+<section id="menu">
+  <h2>Food & Drink</h2>
+  <p>
+    Enjoy classic pub favourites, hearty Sunday roasts,
+    locally sourced ingredients, cask ales, fine wines,
+    and seasonal specials.
+  </p>
+</section>
+
+<section id="times">
+  <h2>Opening Times</h2>
+  <div class="times">
+    Mon – Thu: (add times)<br>
+    Fri – Sat: (add times)<br>
+    Sun: (add times)
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    Phone: (add number)<br>
+    Email: (add email)<br>
+    Address: (add address)
+  </p>
+</section>
+
+<div class="footer">
+  © <script>document.write(new Date().getFullYear())</script> The Crown Glentham
+</div>
+
 </body>
 </html>
