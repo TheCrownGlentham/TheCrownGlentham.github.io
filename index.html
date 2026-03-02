@@ -7,9 +7,8 @@
 
 <style>
 :root{
-  --sage:#9CAF88;
-  --sage-dark:#6F7F63;
-  --cream:#F4EFE6;
+  --sage:#8FAF8A;
+  --cream:#ffffff;
   --beam:#5B4636;
   --gold:#C8A84A;
 }
@@ -24,32 +23,30 @@ body{
 }
 
 header{
-  background:var(--sage);
-  padding:70px 20px;
   text-align:center;
-  border-bottom:10px solid var(--beam);
+  padding:80px 20px 60px;
 }
 
 header img{
-  width:140px;
+  width:160px;
   margin-bottom:20px;
 }
 
 h1{
   margin:0;
-  font-size:44px;
+  font-size:46px;
   letter-spacing:1px;
 }
 
 .tagline{
   font-size:18px;
-  margin-top:10px;
-  color:#2e2e2e;
+  margin-top:12px;
+  color:#555;
 }
 
 .button{
   display:inline-block;
-  padding:14px 28px;
+  padding:14px 30px;
   background:var(--gold);
   color:#000;
   text-decoration:none;
@@ -58,51 +55,50 @@ h1{
   margin-top:25px;
 }
 
-.button:hover{
-  opacity:0.9;
-}
-
 nav{
   background:var(--beam);
-  padding:14px;
+  padding:16px;
   text-align:center;
 }
 
 nav a{
-  color:var(--cream);
+  color:#fff;
   text-decoration:none;
   margin:0 18px;
   font-weight:bold;
   letter-spacing:0.5px;
 }
 
+nav a:hover{
+  color:var(--sage);
+}
+
 section{
-  padding:60px 20px;
+  padding:70px 20px;
   max-width:900px;
   margin:auto;
+  text-align:center;
 }
 
 h2{
-  text-align:center;
-  margin-bottom:25px;
   font-size:30px;
+  margin-bottom:25px;
+  color:var(--sage);
 }
 
 p{
-  line-height:1.7;
   font-size:18px;
-  text-align:center;
+  line-height:1.7;
 }
 
 .times{
-  text-align:center;
   font-size:18px;
-  line-height:1.8;
+  line-height:1.9;
 }
 
 .footer{
   background:var(--beam);
-  color:var(--cream);
+  color:#fff;
   text-align:center;
   padding:30px;
   margin-top:60px;
@@ -113,11 +109,12 @@ p{
 <body>
 
 <header>
-  <img src="./IMG_4644.jpeg" alt="The Crown Glentham Logo" style="width:140px;">
+  <img src="IMG_4644.jpeg" alt="The Crown Glentham Logo">
   <h1>The Crown Glentham</h1>
   <div class="tagline">A Traditional Country Pub</div>
   <a href="#contact" class="button">Book a Table</a>
 </header>
+
 <nav>
   <a href="#about">About</a>
   <a href="#menu">Food & Drink</a>
@@ -126,20 +123,18 @@ p{
 </nav>
 
 <section id="about">
-  <h2>About Us</h2>
+  <h2>About</h2>
   <p>
-    Welcome to The Crown Glentham — a warm and welcoming country pub
-    with sage green walls, rustic beams, traditional food,
-    quality ales and good company.
+    The Crown Glentham is a welcoming country pub serving quality food,
+    well-kept ales, and a relaxed atmosphere in the heart of the village.
   </p>
 </section>
 
 <section id="menu">
   <h2>Food & Drink</h2>
   <p>
-    Enjoy classic pub favourites, hearty Sunday roasts,
-    locally sourced ingredients, cask ales, fine wines,
-    and seasonal specials.
+    Enjoy classic pub favourites, seasonal dishes,
+    local ales, fine wines, and a carefully selected drinks menu.
   </p>
 </section>
 
