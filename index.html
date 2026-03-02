@@ -15,16 +15,16 @@
 
 body{
   margin:0;
-  font-family: Georgia, serif;
+  font-family: Arial, sans-serif;
   background: var(--cream);
-  color: var(--beam);
-  text-align:center;
+  color:#333;
 }
 
 header{
   background: var(--beam);
   color:white;
-  padding:60px 20px;
+  padding:80px 20px;
+  text-align:center;
 }
 
 header img{
@@ -33,34 +33,53 @@ header img{
 }
 
 h1{
-  margin:0;
   font-size:42px;
+  margin:0;
 }
 
 .tagline{
-  font-size:20px;
-  margin-top:12px;
+  font-size:18px;
+  margin-top:10px;
+  color:#ddd;
 }
 
 .button{
   display:inline-block;
-  margin-top:30px;
   padding:14px 30px;
   background: var(--gold);
-  color:black;
+  color:#000;
   text-decoration:none;
-  border-radius:6px;
   font-weight:bold;
+  border-radius:6px;
+  margin-top:30px;
+}
+
+nav{
+  background: var(--beam);
+  padding:16px;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 18px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color: var(--sage);
 }
 
 section{
   padding:70px 20px;
-  max-width:900px;
+  max-width:1000px;
   margin:auto;
+  text-align:center;
 }
 
 .section-title{
-  font-size:30px;
+  font-size:28px;
   margin-bottom:25px;
   color: var(--beam);
 }
@@ -84,6 +103,7 @@ section{
 footer{
   background: var(--beam);
   color:white;
+  text-align:center;
   padding:20px;
   margin-top:40px;
 }
@@ -95,12 +115,19 @@ footer{
 <header>
   <img src="IMG_4644.jpeg" alt="The Crown Glentham Logo">
   <h1>The Crown Glentham</h1>
-  <div class="tagline">A Traditional Country Pub</div>
+  <div class="tagline">Welcome to our official website</div>
 
+  <!-- ONLY EVENTS BUTTON -->
   <a href="events.html" class="button">Upcoming Events</a>
 </header>
 
-<section>
+<nav>
+  <a href="#hours">Opening Hours</a>
+  <a href="#food">Food Times</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="hours">
   <div class="section-title">Opening Hours</div>
 
   <div class="hours-box">
@@ -111,7 +138,7 @@ footer{
   </div>
 </section>
 
-<section>
+<section id="food">
   <div class="section-title">Food Service Times</div>
 
   <div class="hours-box">
