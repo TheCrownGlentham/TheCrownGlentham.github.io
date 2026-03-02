@@ -6,108 +6,110 @@
 <title>The Crown Glentham</title>
 
 <style>
-:root{
-  --brown:#5c4638;
-  --gold:#c4a962;
-  --sage:#8fa483;
-  --cream:#f8f6f2;
+:root {
+  --brown: #5c4435;
+  --sage: #9CAF88;
+  --gold: #c2a65a;
 }
 
-body{
-  margin:0;
+body {
+  margin: 0;
   font-family: Georgia, serif;
-  background:white;
-  color:var(--brown);
-  text-align:center;
+  background-color: #ffffff;
+  color: var(--brown);
+  text-align: center;
 }
 
-header{
-  padding:60px 20px 40px;
+header {
+  padding: 60px 20px 40px 20px;
 }
 
-.logo{
-  width:220px;
-  margin-bottom:20px;
+.logo {
+  max-width: 220px;
+  margin-bottom: 20px;
 }
 
-h1{
-  font-size:48px;
-  margin:10px 0;
+h1 {
+  font-size: 48px;
+  margin: 10px 0;
 }
 
-.tagline{
-  font-size:20px;
-  color:#666;
-  margin-bottom:30px;
+.tagline {
+  font-size: 22px;
+  margin-top: 10px;
 }
 
-.button{
-  display:inline-block;
-  padding:14px 36px;
-  background:var(--gold);
-  color:black;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
-  margin:10px;
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 36px;
+  background: var(--gold);
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
-button{
-  display:inline-block;
-  padding:14px 30px;
-  background:var(--gold);
-  color:black;
-  border:none;
-  font-weight:bold;
-  border-radius:8px;
-  margin-top:12px;
-  cursor:pointer;
+nav {
+  background: var(--brown);
+  padding: 15px;
 }
 
-nav{
-  background:var(--brown);
-  padding:18px;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
 }
 
-nav a{
-  color:white;
-  text-decoration:none;
-  margin:0 18px;
-  font-weight:bold;
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-section{
-  padding:60px 20px;
-  max-width:900px;
-  margin:auto;
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--sage);
 }
 
-h2{
-  font-size:36px;
-  margin-bottom:20px;
+.hours-box {
+  border: 3px solid var(--sage);
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  background: #ffffff;
 }
 
-footer{
-  background:var(--brown);
-  color:white;
-  padding:30px 20px;
-  margin-top:40px;
+form {
+  max-width: 500px;
+  margin: auto;
 }
 
-/* FORM STYLES */
-form input,
-form textarea{
-  width:100%;
-  max-width:450px;
-  padding:12px;
-  border:1px solid #ccc;
-  border-radius:6px;
-  margin-bottom:14px;
-  font-family:inherit;
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-form textarea{
-  height:100px;
+button {
+  padding: 14px 36px;
+  background: var(--gold);
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  background: var(--brown);
+  color: white;
+  padding: 25px;
+  margin-top: 60px;
 }
 </style>
 </head>
@@ -115,44 +117,36 @@ form textarea{
 <body>
 
 <header>
-  <img src="IMG_4644.jpeg" class="logo" alt="The Crown Glentham Logo">
+  <img src="IMG_4644.jpeg" class="logo">
   <h1>The Crown Glentham</h1>
-  <div class="tagline">A Traditional Country Pub</div>
+  <p class="tagline">A Traditional Country Pub</p>
 
   <a href="events.html" class="button">Upcoming Events</a>
-  <a href="menu.html" class="button">View Our Menu</a>
+  <br>
+  <a href="menu.html" class="button">View Menu</a>
 </header>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#opening">Opening Hours</a>
+  <a href="#hours">Opening Hours</a>
   <a href="#food">Food Times</a>
   <a href="#booking">Book a Table</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
-  <h2>About</h2>
-  <p>
-    The Crown Glentham is a welcoming country pub serving quality food, well-kept drinks
-    and hosting regular live entertainment in the heart of Lincolnshire.
-  </p>
-</section>
-
-<section id="opening">
+<section id="hours" class="hours-box">
   <h2>Opening Hours</h2>
   <p>
-    <strong>Monday:</strong> Closed<br><br>
-    <strong>Tuesday – Thursday:</strong> 12pm – 10pm<br><br>
-    <strong>Friday & Saturday:</strong> 12pm – Midnight<br><br>
+    <strong>Monday:</strong> Closed<br>
+    <strong>Tuesday – Thursday:</strong> 12pm – 10pm<br>
+    <strong>Friday – Saturday:</strong> 12pm – Midnight<br>
     <strong>Sunday:</strong> 12pm – 10pm
   </p>
 </section>
 
-<section id="food">
+<section id="food" class="hours-box">
   <h2>Food Times</h2>
   <p>
-    <strong>Wednesday – Saturday:</strong> 12pm – 8pm<br><br>
+    <strong>Wednesday – Saturday:</strong> 12pm – 8pm<br>
     <strong>Sunday:</strong> 12pm – 5pm
   </p>
 </section>
@@ -161,27 +155,27 @@ form textarea{
   <h2>Book a Table</h2>
 
   <form action="https://formspree.io/f/mnjbkjke" method="POST">
-  <input type="hidden" name="_redirect" value="https://thecrownglentham.github.io/thankyou.html">
-
-    <input type="text" name="name" placeholder="Your Full Name" required>
-
+    <input type="text" name="name" placeholder="Your Name" required>
     <input type="tel" name="phone" placeholder="Phone Number" required>
-
     <input type="email" name="email" placeholder="Email Address" required>
 
-    <label style="display:block; margin-bottom:6px; font-weight:bold;">Reservation Date</label>
+    <label>Date:</label>
     <input type="date" name="date" required>
 
-    <label style="display:block; margin-bottom:6px; font-weight:bold;">Reservation Time</label>
+    <label>Time:</label>
     <input type="time" name="time" required>
 
     <input type="number" name="guests" placeholder="Number of Guests" required>
 
-    <textarea name="message" placeholder="Special Requests (optional)"></textarea>
+    <textarea name="message" placeholder="Special Requests"></textarea>
 
     <button type="submit">Send Booking Request</button>
-
   </form>
+
+  <p style="margin-top:20px;">
+    Thankyou for your booking! We will be in touch if we need to reschedule the time chosen.<br><br>
+    Team Crown
+  </p>
 </section>
 
 <section id="contact">
