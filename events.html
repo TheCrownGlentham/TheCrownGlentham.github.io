@@ -2,51 +2,49 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Upcoming Events | The Crown Glentham</title>
 
 <style>
 :root{
   --sage:#8FAF8A;
-  --beam:#5B4636;
+  --brown:#5B4636;
   --gold:#C8A84A;
 }
 
 body{
   margin:0;
   font-family: Georgia, serif;
-  background:#ffffff;
-  color:var(--beam);
+  background:white;
+  color:var(--brown);
   text-align:center;
 }
 
 header{
-  background:var(--beam);
-  color:white;
-  padding:40px 20px;
+  padding:60px 20px 20px;
 }
 
 h1{
+  font-size:48px;
   margin:0;
-  font-size:36px;
 }
 
 section{
-  padding:60px 20px;
-  max-width:800px;
+  padding:40px 20px;
+  max-width:900px;
   margin:auto;
 }
 
 .event-card{
-  border:2px solid var(--sage);
+  background:#f8f6f2;
   padding:30px;
-  border-radius:10px;
+  border-radius:12px;
 }
 
 .event-card img{
   width:100%;
-  max-width:400px;
-  border-radius:8px;
+  max-width:500px;
+  border-radius:12px;
   margin-bottom:20px;
 }
 
@@ -54,17 +52,19 @@ section{
   font-size:20px;
   color:var(--sage);
   margin-top:10px;
+  margin-bottom:20px;
+  font-weight:bold;
 }
 
 .button{
   display:inline-block;
-  margin-top:25px;
-  padding:12px 25px;
+  margin-top:30px;
+  padding:14px 36px;
   background:var(--gold);
   color:black;
   text-decoration:none;
   font-weight:bold;
-  border-radius:6px;
+  border-radius:8px;
 }
 </style>
 </head>
@@ -76,22 +76,24 @@ section{
 </header>
 
 <section>
+  <div class="event-card">
 
-  <div class="event-card"
-    
-<img src="BC47E7AB-EAE6-495F-88EA-A816E29C6D4B.png" alt="Live Singer">
+    <!-- THIS MUST MATCH YOUR UPLOADED FILE NAME EXACTLY -->
+    <img src="BC47E7AB-EAE6-495F-88EA-A816E29C6D4B.png" alt="Live at The Crown">
+
     <h2>Live Singer Night</h2>
+
     <div class="event-date">
-      Saturday 12th July • From 8pm
+      Saturday 14th March at 8pm
     </div>
 
     <p>
       Join us for an evening of live music and great atmosphere.
     </p>
+
   </div>
 
   <a href="index.html" class="button">Back to Home</a>
-
 </section>
 
 </body>
