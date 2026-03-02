@@ -2,106 +2,90 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Crown Glentham</title>
 
 <style>
 :root{
   --sage:#8FAF8A;
-  --cream:#ffffff;
   --beam:#5B4636;
   --gold:#C8A84A;
+  --cream:#ffffff;
 }
-
-*{box-sizing:border-box;}
 
 body{
   margin:0;
   font-family: Georgia, serif;
-  background:var(--cream);
-  color:var(--beam);
+  background: var(--cream);
+  color: var(--beam);
+  text-align:center;
 }
 
 header{
-  text-align:center;
-  padding:80px 20px 60px;
+  background: var(--beam);
+  color:white;
+  padding:60px 20px;
 }
 
 header img{
-  width:160px;
+  max-width:220px;
   margin-bottom:20px;
 }
 
 h1{
   margin:0;
-  font-size:46px;
-  letter-spacing:1px;
+  font-size:42px;
 }
 
 .tagline{
-  font-size:18px;
+  font-size:20px;
   margin-top:12px;
-  color:#555;
 }
 
 .button{
   display:inline-block;
+  margin-top:30px;
   padding:14px 30px;
-  background:var(--gold);
-  color:#000;
+  background: var(--gold);
+  color:black;
   text-decoration:none;
   border-radius:6px;
   font-weight:bold;
-  margin-top:25px;
-}
-
-nav{
-  background:var(--beam);
-  padding:16px;
-  text-align:center;
-}
-
-nav a{
-  color:#fff;
-  text-decoration:none;
-  margin:0 18px;
-  font-weight:bold;
-  letter-spacing:0.5px;
-}
-
-nav a:hover{
-  color:var(--sage);
 }
 
 section{
   padding:70px 20px;
   max-width:900px;
   margin:auto;
-  text-align:center;
 }
 
-h2{
+.section-title{
   font-size:30px;
   margin-bottom:25px;
-  color:var(--sage);
+  color: var(--beam);
 }
 
-p{
-  font-size:18px;
-  line-height:1.7;
-}
-
-.times{
-  font-size:18px;
-  line-height:1.9;
-}
-
-.footer{
-  background:var(--beam);
-  color:#fff;
-  text-align:center;
+.hours-box{
+  background: var(--sage);
   padding:30px;
-  margin-top:60px;
+  border-radius:12px;
+  color:white;
+  margin-top:20px;
+}
+
+.contact-box{
+  background: var(--beam);
+  padding:30px;
+  border-radius:12px;
+  color:white;
+  margin-top:20px;
+}
+
+footer{
+  background: var(--beam);
+  color:white;
+  padding:20px;
+  margin-top:40px;
 }
 </style>
 </head>
@@ -112,72 +96,45 @@ p{
   <img src="IMG_4644.jpeg" alt="The Crown Glentham Logo">
   <h1>The Crown Glentham</h1>
   <div class="tagline">A Traditional Country Pub</div>
-  <a href="#contact" class="button">Book a Table</a>
+
+  <a href="events.html" class="button">Upcoming Events</a>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#menu">Food & Drink</a>
-  <a href="#times">Opening Times</a>
-  <a href="#contact">Contact</a>
-</nav>
+<section>
+  <div class="section-title">Opening Hours</div>
 
-<section id="about">
-  <h2>About</h2>
-  <p>
-    The Crown Glentham is a welcoming country pub serving quality food,
-    well-kept ales, and a relaxed atmosphere in the heart of the village.
-  </p>
-</section>
-
-<section id="menu">
-  <h2>Food & Drink</h2>
-  <p>
-    Enjoy classic pub favourites, seasonal dishes,
-    local ales, fine wines, and a carefully selected drinks menu.
-  </p>
-</section>
-
-<section id="times">
-  <h2>Opening Times</h2>
-  <div class="times">
-    <strong>Monday:</strong> Closed<br><br>
-    <strong>Tuesday – Thursday:</strong> 12pm – 10pm<br><br>
-    <strong>Friday – Saturday:</strong> 12pm – Midnight<br><br>
-    <strong>Sunday:</strong> 12pm – 10pm
+  <div class="hours-box">
+    <p><strong>Monday:</strong> Closed</p>
+    <p><strong>Tuesday – Thursday:</strong> 12pm – 10pm</p>
+    <p><strong>Friday & Saturday:</strong> 12pm – Midnight</p>
+    <p><strong>Sunday:</strong> 12pm – 10pm</p>
   </div>
+</section>
 
-  <br><br>
+<section>
+  <div class="section-title">Food Service Times</div>
 
-  <h2>Food Service Times</h2>
-<div class="times">
-  <strong>Tuesday:</strong> No Food<br><br>
-  <strong>Wednesday – Saturday:</strong> 12pm – 8pm<br><br>
-  <strong>Sunday:</strong> 12pm – 5pm
-</div>
+  <div class="hours-box">
+    <p><strong>Wednesday – Saturday:</strong> 12pm – 8pm</p>
+    <p><strong>Sunday:</strong> 12pm – 5pm</p>
+  </div>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p>
-    <strong>Phone:</strong> 
-    <a href="tel:01673847867">01673 847867</a><br><br>
+  <div class="section-title">Contact Us</div>
 
-    <strong>Email:</strong> 
-    <a href="mailto:Thecrownglentham@gmail.com">
-      Thecrownglentham@gmail.com
-    </a><br><br>
-
-    <strong>Address:</strong><br>
-    <a href="https://www.google.com/maps/search/?api=1&query=High+St,+Glentham,+Market+Rasen+LN8+2EQ" target="_blank">
-      High St, Glentham, Market Rasen LN8 2EQ
-    </a>
-  </p>
+  <div class="contact-box">
+    <p><strong>Phone:</strong> 01673 847867</p>
+    <p><strong>Email:</strong> Thecrownglentham@gmail.com</p>
+    <p><strong>Address:</strong><br>
+    High St, Glentham,<br>
+    Market Rasen LN8 2EQ</p>
+  </div>
 </section>
 
-<div class="footer">
-  © <script>document.write(new Date().getFullYear())</script> The Crown Glentham
-</div>
+<footer>
+  © 2026 The Crown Glentham
+</footer>
 
 </body>
 </html>
