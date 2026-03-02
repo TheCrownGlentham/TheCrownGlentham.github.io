@@ -7,9 +7,10 @@
 
 <style>
 :root{
-  --brown:#5c4435;
-  --gold:#c8a951;
-  --sage:#8ea98d;
+  --brown:#5c4638;
+  --gold:#c4a962;
+  --sage:#8fa483;
+  --cream:#f8f6f2;
 }
 
 body{
@@ -21,21 +22,22 @@ body{
 }
 
 header{
-  padding:60px 20px;
+  padding:60px 20px 40px;
 }
 
 .logo{
   width:220px;
-  margin-bottom:30px;
+  margin-bottom:20px;
 }
 
 h1{
-  font-size:52px;
-  margin-bottom:10px;
+  font-size:48px;
+  margin:10px 0;
 }
 
 .tagline{
-  font-size:22px;
+  font-size:20px;
+  color:#666;
   margin-bottom:30px;
 }
 
@@ -45,9 +47,21 @@ h1{
   background:var(--gold);
   color:black;
   text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+  margin:10px;
+}
+
+button{
+  display:inline-block;
+  padding:14px 30px;
+  background:var(--gold);
+  color:black;
+  border:none;
   font-weight:bold;
   border-radius:8px;
-  margin:10px;
+  margin-top:12px;
+  cursor:pointer;
 }
 
 nav{
@@ -63,21 +77,37 @@ nav a{
 }
 
 section{
-  padding:70px 20px;
+  padding:60px 20px;
   max-width:900px;
   margin:auto;
 }
 
 h2{
   font-size:36px;
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
 
 footer{
   background:var(--brown);
   color:white;
   padding:30px 20px;
-  margin-top:60px;
+  margin-top:40px;
+}
+
+/* FORM STYLES */
+form input,
+form textarea{
+  width:100%;
+  max-width:450px;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  margin-bottom:14px;
+  font-family:inherit;
+}
+
+form textarea{
+  height:100px;
 }
 </style>
 </head>
@@ -85,59 +115,87 @@ footer{
 <body>
 
 <header>
-<img src="IMG_4644.jpeg" class="logo">
-<h1>The Crown Glentham</h1>
-<div class="tagline">A Traditional Country Pub</div>
+  <img src="IMG_4644.jpeg" class="logo" alt="The Crown Glentham Logo">
+  <h1>The Crown Glentham</h1>
+  <div class="tagline">A Traditional Country Pub</div>
 
-<a href="events.html" class="button">Upcoming Events</a>
-<a href="menu.html" class="button">View Our Menu</a>
-
+  <a href="events.html" class="button">Upcoming Events</a>
+  <a href="menu.html" class="button">View Our Menu</a>
 </header>
 
 <nav>
-<a href="#about">About</a>
-<a href="#opening">Opening Hours</a>
-<a href="#food">Food Times</a>
-<a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#opening">Opening Hours</a>
+  <a href="#food">Food Times</a>
+  <a href="#booking">Book a Table</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-<h2>About</h2>
-<p>
-The Crown Glentham is a welcoming country pub serving quality food, well-kept drinks and hosting regular live entertainment.
-We pride ourselves on a relaxed atmosphere and traditional hospitality.
-</p>
+  <h2>About</h2>
+  <p>
+    The Crown Glentham is a welcoming country pub serving quality food, well-kept drinks
+    and hosting regular live entertainment in the heart of Lincolnshire.
+  </p>
 </section>
 
 <section id="opening">
-<h2>Opening Hours</h2>
-<p>
-Monday – Closed<br><br>
-Tuesday – Thursday: 12pm – 10pm<br><br>
-Friday – Saturday: 12pm – Midnight<br><br>
-Sunday: 12pm – 10pm
-</p>
+  <h2>Opening Hours</h2>
+  <p>
+    <strong>Monday:</strong> Closed<br><br>
+    <strong>Tuesday – Thursday:</strong> 12pm – 10pm<br><br>
+    <strong>Friday & Saturday:</strong> 12pm – Midnight<br><br>
+    <strong>Sunday:</strong> 12pm – 10pm
+  </p>
 </section>
 
 <section id="food">
-<h2>Food Times</h2>
-<p>
-Wednesday – Saturday: 12pm – 8pm<br><br>
-Sunday: 12pm – 5pm
-</p>
+  <h2>Food Times</h2>
+  <p>
+    <strong>Wednesday – Saturday:</strong> 12pm – 8pm<br><br>
+    <strong>Sunday:</strong> 12pm – 5pm
+  </p>
+</section>
+
+<section id="booking">
+  <h2>Book a Table</h2>
+
+  <form action="https://formspree.io/f/mnjbkjke" method="POST">
+
+    <input type="text" name="name" placeholder="Your Full Name" required>
+
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <label style="display:block; margin-bottom:6px; font-weight:bold;">Reservation Date</label>
+    <input type="date" name="date" required>
+
+    <label style="display:block; margin-bottom:6px; font-weight:bold;">Reservation Time</label>
+    <input type="time" name="time" required>
+
+    <input type="number" name="guests" placeholder="Number of Guests" required>
+
+    <textarea name="message" placeholder="Special Requests (optional)"></textarea>
+
+    <button type="submit">Send Booking Request</button>
+
+  </form>
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
-<p>
-Phone: 01673 847867<br><br>
-Email: Thecrownglentham@gmail.com<br><br>
-Address: High St, Glentham, Market Rasen LN8 2EQ
-</p>
+  <h2>Contact</h2>
+  <p>
+    <strong>Phone:</strong> 01673 847867<br><br>
+    <strong>Email:</strong> Thecrownglentham@gmail.com<br><br>
+    <strong>Address:</strong><br>
+    High St, Glentham,<br>
+    Market Rasen LN8 2EQ
+  </p>
 </section>
 
 <footer>
-© 2026 The Crown Glentham
+  © 2026 The Crown Glentham
 </footer>
 
 </body>
