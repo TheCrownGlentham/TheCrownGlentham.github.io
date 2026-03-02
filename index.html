@@ -8,102 +8,80 @@
 <style>
 :root{
   --sage:#8FAF8A;
-  --beam:#5B4636;
+  --brown:#5B4636;
   --gold:#C8A84A;
-  --cream:#ffffff;
+  --cream:#f8f6f2;
 }
 
 body{
   margin:0;
-  font-family: Arial, sans-serif;
-  background: var(--cream);
-  color:#333;
-}
-
-header{
-  background: var(--beam);
-  color:white;
-  padding:80px 20px;
+  font-family: Georgia, serif;
+  background:white;
+  color:var(--brown);
   text-align:center;
 }
 
+/* HERO */
+header{
+  padding:60px 20px 40px;
+}
+
 header img{
-  max-width:220px;
+  width:180px;
   margin-bottom:20px;
 }
 
 h1{
-  font-size:42px;
+  font-size:56px;
   margin:0;
 }
 
 .tagline{
-  font-size:18px;
+  font-size:22px;
   margin-top:10px;
-  color:#ddd;
+  color:#777;
 }
 
 .button{
   display:inline-block;
-  padding:14px 30px;
-  background: var(--gold);
-  color:#000;
+  margin-top:30px;
+  padding:14px 36px;
+  background:var(--gold);
+  color:black;
   text-decoration:none;
   font-weight:bold;
-  border-radius:6px;
-  margin-top:30px;
+  border-radius:8px;
 }
 
+/* NAV BAR */
 nav{
-  background: var(--beam);
-  padding:16px;
-  text-align:center;
+  background:var(--brown);
+  padding:18px;
 }
 
 nav a{
   color:white;
   text-decoration:none;
-  margin:0 18px;
+  margin:0 20px;
   font-weight:bold;
-}
-
-nav a:hover{
-  color: var(--sage);
+  font-size:18px;
 }
 
 section{
   padding:70px 20px;
-  max-width:1000px;
+  max-width:900px;
   margin:auto;
-  text-align:center;
 }
 
-.section-title{
-  font-size:28px;
-  margin-bottom:25px;
-  color: var(--beam);
-}
-
-.hours-box{
-  background: var(--sage);
-  padding:30px;
-  border-radius:12px;
-  color:white;
-  margin-top:20px;
-}
-
-.contact-box{
-  background: var(--beam);
-  padding:30px;
-  border-radius:12px;
-  color:white;
-  margin-top:20px;
+section h2{
+  color:var(--sage);
+  font-size:42px;
+  margin-bottom:20px;
 }
 
 footer{
-  background: var(--beam);
+  background:var(--brown);
   color:white;
-  text-align:center;
   padding:20px;
   margin-top:40px;
 }
@@ -115,48 +93,53 @@ footer{
 <header>
   <img src="IMG_4644.jpeg" alt="The Crown Glentham Logo">
   <h1>The Crown Glentham</h1>
-  <div class="tagline">Welcome to our official website</div>
+  <div class="tagline">A Traditional Country Pub</div>
 
-  <!-- ONLY EVENTS BUTTON -->
   <a href="events.html" class="button">Upcoming Events</a>
 </header>
 
 <nav>
-  <a href="#hours">Opening Hours</a>
+  <a href="#about">About</a>
+  <a href="#opening">Opening Hours</a>
   <a href="#food">Food Times</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="hours">
-  <div class="section-title">Opening Hours</div>
+<section id="about">
+  <h2>About</h2>
+  <p>
+    The Crown Glentham is a welcoming country pub serving quality food,
+    well-kept drinks and live entertainment in the heart of Lincolnshire.
+  </p>
+</section>
 
-  <div class="hours-box">
-    <p><strong>Monday:</strong> Closed</p>
-    <p><strong>Tuesday – Thursday:</strong> 12pm – 10pm</p>
-    <p><strong>Friday & Saturday:</strong> 12pm – Midnight</p>
-    <p><strong>Sunday:</strong> 12pm – 10pm</p>
-  </div>
+<section id="opening">
+  <h2>Opening Hours</h2>
+  <p>
+    <strong>Monday:</strong> Closed<br>
+    <strong>Tuesday – Thursday:</strong> 12pm – 10pm<br>
+    <strong>Friday & Saturday:</strong> 12pm – Midnight<br>
+    <strong>Sunday:</strong> 12pm – 10pm
+  </p>
 </section>
 
 <section id="food">
-  <div class="section-title">Food Service Times</div>
-
-  <div class="hours-box">
-    <p><strong>Wednesday – Saturday:</strong> 12pm – 8pm</p>
-    <p><strong>Sunday:</strong> 12pm – 5pm</p>
-  </div>
+  <h2>Food Times</h2>
+  <p>
+    <strong>Wednesday – Saturday:</strong> 12pm – 8pm<br>
+    <strong>Sunday:</strong> 12pm – 5pm
+  </p>
 </section>
 
 <section id="contact">
-  <div class="section-title">Contact Us</div>
-
-  <div class="contact-box">
-    <p><strong>Phone:</strong> 01673 847867</p>
-    <p><strong>Email:</strong> Thecrownglentham@gmail.com</p>
-    <p><strong>Address:</strong><br>
+  <h2>Contact</h2>
+  <p>
+    <strong>Phone:</strong> 01673 847867<br>
+    <strong>Email:</strong> Thecrownglentham@gmail.com<br>
+    <strong>Address:</strong><br>
     High St, Glentham,<br>
-    Market Rasen LN8 2EQ</p>
-  </div>
+    Market Rasen LN8 2EQ
+  </p>
 </section>
 
 <footer>
@@ -164,7 +147,4 @@ footer{
 </footer>
 
 </body>
-  <div style="background:#ff0; color:#000; padding:12px; text-align:center; font-weight:bold;">
-  TEST UPDATE (if you can see this, the site is updating)
-</div>
 </html>
